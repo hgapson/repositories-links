@@ -40,6 +40,12 @@ class AddContact extends Component {
     return (
       <div className="Phonebook" >
           <div className='heading'>
+          <aside>
+                                    <div><i class="fab fa-facebook-f facebook"></i></div>
+                                    <div><i class="fab fa-twitter twitter"></i></div>
+                                    <div><i class="fab fa-linkedin-in linked"></i></div>
+                                    <div><i class="fas fa-paper-plane send"></i></div>
+                                </aside>
               <h1>Submit your Project</h1> 
               <p>Project Details:  <span>This is the link to the project you need to complete <i class="fas fa-arrow-up"></i></span></p>
               <div class="pencil"></div>
