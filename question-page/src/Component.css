@@ -215,8 +215,131 @@ height: 100%;
     left: 80px;
   }
   .pencil{
+    left: 350px;
+    margin-top: 5%;
+  }
+  .form-control{
+    width: 250px;
+  }
+  aside{
+    
+    left: 100px;
+    top: 110px;
+  }
+  .call{
+    left: -3%;
+  }
+  .info{
+    left: 80%;
+    top: 45px;
+  }
+  p{
+    font-size: 95%;
+  }
+  span{
+    font-size: 95%;
+  }
+  #coppy{
+
+    width: 480px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  aside{
+    
+    left: 90px;
+    top: 150px;
+  }
+  .pencil{
+    left: 470px;
+    margin-top: 3%;
+  }
+  .btn-success{
+    left: 130px;
+  }
+  .info{
+    left: 80%;
+    top: 45px;
+  }
+  .call{
+    left: -3%;
+  }
+  #coppy{
+
+    width: 650px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .pencil{
+    left: 500px;
+    margin-top: 0%;
+  }
+  .btn-success{
+    left: 150px;
+  }
+  p{
+    font-size: 17px;
+  }
+  span{
+    font-size: 17px;
+  }
+  #coppy{
+
+    width: 760px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .btn-success{
+    left: 200px;
+  }
+  .pencil{
+    left: 540px;
+    margin-top: 0%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .pencil{
+    left: 900px;
+  }
+  .btn-success{
     left: 400px;
-    margin-top: -5%;
+  }
+  form{
+    margin-top: 0%;
+    margin-left: 5%;
+  }
+  .call{
+    top: 25px;
+    margin-left: 8.4%;
+}
+span{
+  font-size: 15px;
+}
+p{
+  margin-top: -3%;
+  margin-left: 10%;
+}
+h1{
+  font-size: 45px;
+  margin-top:25%;
+  margin-left: 10%;
+}
+aside{
+  left: 120px;
+  top: 150px;
+  }
+  #coppy{
+    width: 1535px;
+  }
+  .form-control{
+    width: 450px;
   }
 }
 
