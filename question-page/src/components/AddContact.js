@@ -6,45 +6,45 @@ import {addContact} from '../actions/contactActions';
 
 class AddContact extends Component {
   state = {
-    git: '',
-    heroku:'',
+    git_hub_url: '',
+    heroku_url:'',
     errors: {}
   };
 
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { git,heroku, errors } = this.state;
+    const { git_hub_url,heroku_url, errors } = this.state;
 
     const newContact = {
-      name: git+ ' ' +heroku,
+      git_hub_url, heroku_url,
       errors
     };
 
    this.props.addContact(newContact)
     this.setState({
-      firstname: '',
-      surname:'',
+      git_hub_url: '',
+      heroku_url:'',
       errors: {}
     });
 
-    this.props.history.push('/');
+    // this.props.history.push('/');
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
 
   render() {
-    const { git,heroku} = this.state;
+    const { git_hub_url,heroku_url} = this.state;
 
     return (
       <div className="Phonebook" >
           <div className='heading'>
           <aside>
-                                    <div><i class="fab fa-facebook-f facebook"></i></div>
-                                    <div><i class="fab fa-twitter twitter"></i></div>
-                                    <div><i class="fab fa-linkedin-in linked"></i></div>
-                                    <div><i class="fas fa-paper-plane send"></i></div>
+                                    <div><i className="fab fa-facebook-f facebook"></i></div>
+                                    <div><i className="fab fa-twitter twitter"></i></div>
+                                    <div><i className="fab fa-linkedin-in linked"></i></div>
+                                    <div><i className="fas fa-paper-plane send"></i></div>
                                 </aside>
               <h1>Submit your Project</h1> 
               <p>Project Details:  <span>This is the link to the project you need to complete <i class="fas fa-arrow-up"></i></span></p>
@@ -55,11 +55,11 @@ class AddContact extends Component {
            <div className="form-name">
              <label>GitHub URL</label>
              <input className="form-control" 
-             type="text" 
+             type="url" 
              required placeholder="GitHub URL of your project" 
              id="cardCVC" 
-             name='git'
-             value={git}
+             name='git_hub_url'
+             value={git_hub_url}
              onChange={this.onChange}
              
              />
@@ -69,11 +69,11 @@ class AddContact extends Component {
            <div className="sname form-name">
                <label>Heroku URL</label>
                <input className="form-control" 
-                     type="text" 
+                     type="url" 
                      required placeholder="Heroku URL of your project" 
                      id="cardCVC"
-                     name='heroku' 
-                     value={heroku}
+                     name='heroku_url' 
+                     value={heroku_url}
                      onChange={this.onChange}
                      />
              </div>
