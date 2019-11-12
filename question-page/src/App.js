@@ -1,6 +1,7 @@
 import React from 'react';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import AddContact from './components/AddContact';
+//import AddContact from './components/AddContact';
+import Login from './components/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import {Provider} from 'react-redux';
@@ -14,7 +15,7 @@ const App = () => {
         <div className="App">
           <Header />
           <div className="container">
-            <AddContact/>
+            <Login/>
           </div>
           <Footer/>
         </div>

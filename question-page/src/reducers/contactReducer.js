@@ -2,8 +2,7 @@ import {ADD_CONTACT} from '../actions/types'
 
 
 const initialState ={
-    contacts:[],
-    contact:{} 
+    contacts:[] 
 };
 
 export default (state=initialState,action) =>{

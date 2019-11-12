@@ -47,8 +47,8 @@ class AddContact extends Component {
                                     <div><i className="fas fa-paper-plane send"></i></div>
                                 </aside>
               <h1>Submit your Project</h1> 
-              <p>Project Details:  <span>This is the link to the project you need to complete <i class="fas fa-arrow-up"></i></span></p>
-              <div class="pencil"></div>
+              <p>Project Details:  <span>This is the link to the project you need to complete <i className="fas fa-arrow-up"></i></span></p>
+              <div className="pencil"></div>
           </div>
           <form onSubmit={this.onSubmit}>    
          <div className="form-row names" >

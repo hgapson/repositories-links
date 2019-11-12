@@ -176,11 +176,11 @@ height: 100%;
   }
 .pencil{
   float: right;
-  position: absolute;
+  
   width: 160px;
   height: 10px;
   left: 900px;
-  top: 430px;
+  top: 530px;
   background: #ffc334;
   border-top: 10px solid #FF6C17;
   border-bottom: 10px solid #e2af38;
@@ -189,26 +189,31 @@ height: 100%;
 .pencil:before{
   content:'' ;
   position: absolute;
-  left: -80px;
-  top: -20%;
+  left: -72px;
+  top: 44.6%;
   border-style: solid;
   border-color: transparent #e29663 transparent transparent;
-  border-width: 17px 40px 18px;
+  border-width: 8px 36px 12px;
   
 }
 .pencil:after{
   content:'' ;
   position: absolute;
-  left: -80px;
-  top: -10%;
+  left: -77px;
+  top: 44.6%;
   border-style: solid;
   border-color: transparent #262626 transparent transparent;
-  border-width: 17px 40px 17px;
+  border-width: 6px 40px 11px;
   transform: scale(.3);
 }
 .fa-arrow-up{
   transform: rotate(90deg);
 }
+.bodypart{
+min-height: 450px;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .btn-success{
@@ -236,7 +241,7 @@ height: 100%;
     left: 20%;
   }
   .info{
-    left: 120%;
+    left: 80%;
     top: 45px;
   }
   p{
@@ -266,7 +271,7 @@ height: 100%;
     left: 130px;
   }
   .info{
-    left: 1500px;
+    left: 80%;
     top: 45px;
   }
   .call{
@@ -349,5 +354,7 @@ aside{
   .form-control{
     width: 450px;
   }
-  
+  .info{
+    left: 90%;
+  }
 }
