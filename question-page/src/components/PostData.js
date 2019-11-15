@@ -1,5 +1,5 @@
 export function PostData(type, userDAta){
-    let BaseUrl='https://api.thewallscript.com/restful';
+    let BaseUrl='https://api.thewallscript.com/restful/';
 
     return new Promise((resolve, reject) => {
 

@@ -1,27 +1,23 @@
 import React from 'react';
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-//import AddContact from './components/AddContact';
-import Login from './components/Login';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import {Provider} from 'react-redux';
-import store from './store';
-import './Component.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-const App = () => {
-    return(
-       <Provider store={store}>
-        
-        <div className="App">
-          <Header />
-          <div className="container">
-            <Login/>
-          </div>
-          <Footer/>
-        </div>
-      
-       </Provider>
-        
-)
+import AddContact from './components/AddContact';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
+
+
+const App =()=>{
+    return (
+            <BrowserRouter>
+            <Switch>
+                <React.Fragment>
+                    <Route exact path="/" component={Login} />
+                    <Route exact path="/AddContact" component={AddContact}/>
+                    <Route exact path="/SignUp" component={SignUp}/>
+                   
+                </React.Fragment>
+            </Switch>
+        </BrowserRouter>
+    )
 }
 export default App;
