@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Header from './Header';
+
 import Footer from './Footer';
 
 class SignUp extends React.Component{
@@ -39,7 +39,7 @@ class SignUp extends React.Component{
         
         return(
             <div>
-                <Header/>
+                
                 <div className="ui container" style={{marginTop: '10px'}}>
                 <h1> SignUp Form</h1>
                 <form onSubmit={this.formSubmit} className="ui form" style={{marginRight: '30rem', marginLeft: '8rem'}}>
