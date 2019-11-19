@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+
 
 
 class Login extends React.Component{
@@ -21,11 +21,12 @@ class Login extends React.Component{
 
     //form submit
     formSubmit=(e)=>{
-        e.preventDefault();
-        axios.post('https://codecatalyst-test.herokuapp.com/api/login',{email: this.state.email, password: this.state.password})
+        e.preventDefault()
+        axios.post('/login',{email: this.state.email, password: this.state.password})
         .then(res => {
             localStorage.setItem("user-token",res.data.token)
-            this.props.history.push('/AddContact')
+            console.log('logged in ')
+            this.props.history.push('/AddUrl')
             //console.log('you are logged in ')
         })
         .catch(err => {
@@ -60,7 +61,7 @@ class Login extends React.Component{
                 </form>
                 
             </div>
-                <Footer/>
+                
             </div>
         )
     }
