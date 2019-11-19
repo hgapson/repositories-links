@@ -22,7 +22,7 @@ class Login extends React.Component{
     //form submit
     formSubmit=(e)=>{
         e.preventDefault()
-        axios.post('/login',{email: this.state.email, password: this.state.password})
+        axios.post('https://codecatalyst-test.herokuapp.com/api/login',{email: this.state.email, password: this.state.password})
         .then(res => {
             localStorage.setItem("user-token",res.data.token)
             console.log('logged in ')
